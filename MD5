@@ -1,0 +1,11 @@
+a86c21a024132bb1aca1c4e222dab4cc *DESCRIPTION
+4ad3442d7b4e7eea21fd5a26b9b73c3c *NAMESPACE
+c997d271b3ef930c44a46a313f374e34 *R/gpd.test-internal.R
+e1d4fd4351da6104370e93d50d900768 *R/gpd.test.R
+d23ab13743dd05900cae474fdef88d2f *R/gumbel.R
+87869bf2609462b546dc067da2b9951d *R/mvShapiro.Test.R
+27c0a75e0cd220c9f1bf5be184ca04fa *R/normal.R
+f9551fb2ca2f4238b4ec0a4f3f2db7fa *man/gpd.test.Rd
+e60768af0451fad1ef676470fea6ec1c *man/gumbel.Rd
+9a2c935516016ad98a3e3c24e7588544 *man/mvShapiro.Test.Rd
+6db71390396cf806271e5133d925b753 *man/normal.Rd
