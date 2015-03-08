@@ -2,7 +2,7 @@
 \alias{normal.test}
 \title{ Correlation test for univariate normality }
 \description{
-This function implements the correlation test for normality  based on the Levy characterization by Villasenor-Alva and Gonzalez-Estrada (2013).
+Test for normality  (based on the Levy characterization) proposed by Villasenor-Alva and Gonzalez-Estrada (2015) \url{http://dx.doi.org/10.1080/03610918.2013.810261}.
 }
 \usage{
 normal.test(x)
@@ -25,13 +25,12 @@ Based on this property, the normality assumption might be judged by comparing su
   \item{method}{ the character string "Correlation test for normality".  }
   \item{data.name}{ a character string giving the name of the data set.  }
 }
-\references{ Villasenor-Alva, J.A. and Gonzalez-Estrada, E. (2013). A correlation test for normality based on the Levy characterization. \emph{Communications in Statistics: Simulation and Computation} (to appear).}
-
+\references{ Villasenor-Alva, J.A. and Gonzalez-Estrada, E. (2015). A correlation test for normality based on the Levy characterization. \emph{Communications in Statistics: Simulation and Computation}, \bold{44} 5, 1225-1238.  \url{http://dx.doi.org/10.1080/03610918.2013.810261}}
+\author{ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor-Alva }
 \seealso{  \code{\link{shapiro.test}}}
 \examples{
-x <- rnorm(20)        # generating a pseudo random sample of size 20 from
-                      # the standard normal distribution
-normal.test(x)        # testing normality on x
+data(goats)
+apply(goats,2,normal.test)    # testing normality on each variable of the goats dataset    
 }
 \keyword{ htest }
 

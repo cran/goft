@@ -2,7 +2,7 @@
 \alias{gpd.test}
 \title{ Bootstrap goodness-of-fit test for the generalized Pareto distribution}
 \description{
-This function computes the bootstrap goodness-of-fit test by Villasenor-Alva and Gonzalez-Estrada (2009) for testing the null hypothesis
+Bootstrap goodness-of-fit test proposed by Villasenor-Alva and Gonzalez-Estrada (2009) for testing the null hypothesis
 \eqn{H_0:}{H_0:} a random sample has a  generalized Pareto distribution (gPd) with unknown shape parameter
 \eqn{\gamma}{gamma}, which is a real number.
 }
