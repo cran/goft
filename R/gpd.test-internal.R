@@ -1,4 +1,4 @@
-# Asymptotic maximum likelihood estimator of the shape parameter
+# Asymptotic maximum likelihood estimator of the shape parameter of the gPd
 `.aml` <-
 function(x,n,k)
 {

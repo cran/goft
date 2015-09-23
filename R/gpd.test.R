@@ -15,7 +15,7 @@ r2 <- .r2(x,n,Fn)
 p.value1 <- sum( .cc1(n,gamman,J) < r1)/J
 p.value2 <-  sum( .cc2(n,gammap,Fn,J) < r2 )/J
 p.value <- max(p.value1,p.value2)
-results <- list("p.value"=p.value, method = "Bootstrap test for the generalized Pareto distribution", data.name=dname)
+results <- list("p.value"=p.value, method = "Bootstrap test of fit for the generalized Pareto distribution", data.name=dname)
     pvalues <- as.matrix(c(p.value1,p.value2),ncol=1)
     colnames(pvalues) <- c("p.value")
     rownames(pvalues) <- c("H_0^-: x has a gPd with negative shape parameter ","H_0^+: x has a gPd with positive shape parameter ")

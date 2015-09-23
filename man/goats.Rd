@@ -5,7 +5,7 @@
 Zoometric measurements of creole goats
 }
 \description{
-This dataset contains zoometric measurements of 27 weeks old creole goats. These data were collected by Dorantes-Coronado (2013) as part of a preliminary study of the creole goat production system conducted in two locations of Mexico in order to start a genetic improvement program. Only one location is considered.
+Zoometric measurements of 27 week old creole goats. These data were collected by Dorantes-Coronado (2013) as part of a preliminary study of the creole goat production system conducted in two locations in Mexico in order to start a genetic improvement program. Only one location is considered.
 
 }
 \usage{data(goats)}

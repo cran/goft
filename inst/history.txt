@@ -2,5 +2,8 @@ version 1.0 (2013-12-04):
   first public release and distribution via WWW
 
 version 1.1 (2015-03-08):
-  the gammadist.test funtion and the goats dataset were included 
+  the gammadist.test function and the goats dataset were included 
   the gumbel.test function was removed
+
+version 1.1 (2015-09-20):
+  the gammadist.fit, ig.fit, ig.test and gpd.fit functions were included 
