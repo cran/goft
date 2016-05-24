@@ -2,10 +2,10 @@
 \alias{goats}
 \docType{data}
 \title{
-Zoometric measurements of creole goats
+Zoometric measurements of goats
 }
 \description{
-Zoometric measurements of 27 week old creole goats. These data were collected by Dorantes-Coronado (2013) as part of a preliminary study of the creole goat production system conducted in two locations in Mexico in order to start a genetic improvement program. Only one location is considered.
+Zoometric measurements of 27 week old creole goats collected by Dorantes-Coronado (2013).
 
 }
 \usage{data(goats)}
@@ -26,7 +26,7 @@ Zoometric measurements of 27 week old creole goats. These data were collected by
 Dorantes-Coronado (2013).
 }
 \references{
-Dorantes-Coronado, E.J. (2013). Estudio preliminar para el establecimiento de un programa de mejoramiento genetico de cabras en el Estado de Mexico. Tesis de doctorado. Colegio de Postgraduados, Mexico.
+Dorantes-Coronado, E.J. (2013). Estudio preliminar para el establecimiento de un programa de mejoramiento genetico de cabras en el Estado de Mexico. Ph.D. Thesis. Colegio de Postgraduados, Mexico.
 }
 \examples{
 data(goats)

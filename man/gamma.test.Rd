@@ -1,17 +1,18 @@
-\name{gammadist.test}
-\alias{gammadist.test}
+\name{gamma_test}
+\alias{gamma_test}
 \title{ Test for the Gamma distribution }
 \description{
-Villasenor and Gonzalez-Estrada (2015) test of fit for the Gamma distribution with unknown shape and scale parameters.
+Test of fit for the Gamma distribution with unknown shape and scale parameters based on the ratio of two variance estimators (Villasenor and Gonzalez-Estrada, 2015).
 }
 \usage{
-gammadist.test(x)
+gamma_test(x)
 }
 \arguments{
-  \item{x}{ Numeric data vector containing a random sample  of positive real numbers. }
+  \item{x}{ a numeric data vector containing a random sample  of positive real numbers. }
 }
+
 \details{
-The test statistic is based on the ratio of two estimators of the variance, namely, the sample variance and the moments estimator obtained by Villasenor and Gonzalez-Estrada (2015), which is the product of the sample mean of X by the sample covariance of X and log(X).
+The test statistic is  the ratio of two variance estimators, namely, the sample variance and the moments estimator obtained by Villasenor and Gonzalez-Estrada (2015), which is the product of the sample mean of X and the sample covariance of X and log(X).
 
 The asymptotic null distribution of the test statistic is used to approximate p-values.
 
@@ -27,10 +28,15 @@ NOTE: the unbiased sample covariance estimator is used to compute the test stati
 }
 \references{ Villasenor, J.A. and Gonzalez-Estrada, E. (2015). A variance ratio test of fit for Gamma distributions. \emph{Statistics and Probability Letters}, \bold{96} 1, 281-286. \url{http://dx.doi.org/10.1016/j.spl.2014.10.001}}
 \author{ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor-Alva }
-\seealso{  \code{\link{gammadist.fit}} for fitting a Gamma distribution to data.}
+\seealso{  \code{\link{gamma_fit}} for fitting a Gamma distribution to data.}
 \examples{
-x <- rgamma(50,3)
-gammadist.test(x)        # testing the gamma hypothesis
+# Testing the gamma distribution hypothesis on the logarithm of variable Loss 
+# of the danishuni data set 
+library(fitdistrplus)
+data(danishuni) 
+logLoss <- log(danishuni$Loss)   # logarithm of Loss variable
+logLoss <- logLoss[logLoss > 0]  # observations > 0
+gamma_test(logLoss)                 
 }
 
 
