@@ -1,6 +1,6 @@
 # Tests for inverse Gaussian distributions
 
-ig.test <- function(x, method = "transf"){  
+ig_test <- function(x, method = "transf"){  
   DNAME <- deparse(substitute(x))
   if (!is.numeric(x) & length(x) <= 1) stop(paste(DNAME, "must be a numeric vector containing more than 1 observation"))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted")

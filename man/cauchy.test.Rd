@@ -1,5 +1,5 @@
-\name{cauchy.test}
-\alias{cauchy.test}
+\name{cauchy_test}
+\alias{cauchy_test}
 
 \title{
 Test for the Cauchy distribution
@@ -8,7 +8,7 @@ Test for the Cauchy distribution
 A test based on the ratio of two estimators for the scale parameter of the Cauchy distribution.
 }
 \usage{
-cauchy.test(x, N = 10^3)
+cauchy_test(x, N = 10^3)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -38,7 +38,7 @@ Elizabeth Gonzalez-Estrada and Jose A. Villasenor
 
 \examples{
 x <- rnorm(20)    # simulating a data set from a normal distribution
-cauchy.test(x)    # testing the Cauchy distribution hypothesis 
+cauchy_test(x)    # testing the Cauchy distribution hypothesis 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

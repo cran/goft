@@ -1,11 +1,11 @@
-\name{gp.test}
-\alias{gp.test}
+\name{gp_test}
+\alias{gp_test}
 \title{ Bootstrap test for the generalized Pareto distribution}
 \description{
 Test of fit for the generalized Pareto distribution (gPd) with unknown parameters by Villasenor-Alva and Gonzalez-Estrada (2009).
 }
 \usage{
-gp.test(x, B = 999)
+gp_test(x, B = 999)
 }
 \arguments{
   \item{x}{ numeric data vector containing a random sample of positive real numbers.}
@@ -31,13 +31,13 @@ A list with class \code{"htest"} containing the following components.
 }
 \references{ Villasenor-Alva, J.A. and Gonzalez-Estrada, E. (2009). A bootstrap goodness of fit test for the generalized Pareto distribution. \emph{Computational Statistics and Data Analysis},\bold{53},11,3835-3841.  \url{http://dx.doi.org/10.1016/j.csda.2009.04.001}}
 \author{ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor-Alva}
-\seealso{  \code{\link{gp.fit}} for fitting a gPd to data.}
+\seealso{  \code{\link{gp_fit}} for fitting a gPd to data.}
 \examples{
 # Testing the gPd hypothesis on the excesses above the threshold 0.165 ppm of the ozone
 # levels given in the o3 data set
 data(o3)
 o3levels <- o3$ozone_level - 0.165  # ozone levels minus the threshold 0.165 ppm     
-gp.test(o3levels, B = 9999)   # testing the gPd hypothesis using 9999 bootstrap samples            
+gp_test(o3levels)                   # testing the gPd hypothesis
 }
 
 \keyword{htest}

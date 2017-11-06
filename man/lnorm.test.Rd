@@ -1,5 +1,5 @@
-\name{lnorm.test}
-\alias{lnorm.test}
+\name{lnorm_test}
+\alias{lnorm_test}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Test for the lognormal distribution
@@ -8,7 +8,7 @@ Test for the lognormal distribution
 Test for the lognormal distribution based on a data transformation to normal observations.
 }
 \usage{
-lnorm.test(x)
+lnorm_test(x)
 }
 \arguments{
   \item{x}{ a numeric data vector containing a random sample of positive observations.}
@@ -29,14 +29,14 @@ Elizabeth Gonzalez-Estrada, Jose A. Villasenor
 }
 
 \seealso{
- Other tests for some alternative distributions to the lognormal model are impremented in  functions \code{\link{ig.test}}, \code{\link{gamma_test}} and \code{\link{weibull.test}}.
+ Other tests for some alternative distributions to the lognormal model are impremented in  functions \code{\link{ig_test}}, \code{\link{gamma_test}} and \code{\link{weibull_test}}.
 }
 \examples{
 # Testing the lognormal distribution hypothesis  on the compressive strength variable
 # of the strength data set.
 data("strength")
 x  <- strength$cstrength   # compressive strength
-lnorm.test(x)              # testing the lognormal distribution hypothesis 
+lnorm_test(x)              # testing the lognormal distribution hypothesis 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -1,6 +1,6 @@
 # Bootstrap goodness-ofi-fit test for the Generalized Pareto distribution
 
-gp.test <- function(x, B = 999){
+gp_test <- function(x, B = 999){
   dname <- deparse(substitute(x))
   if (!is.numeric(x)) stop(paste(dname, "must be a numeric vector"))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted")

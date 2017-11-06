@@ -1,5 +1,5 @@
-\name{laplace.test}
-\alias{laplace.test}
+\name{laplace_test}
+\alias{laplace_test}
 
 \title{
 Tests for the Laplace or double exponential distribution
@@ -8,7 +8,7 @@ Tests for the Laplace or double exponential distribution
 Transformation and ratio tests for the Laplace distribution by  Gonzalez-Estrada and Villasenor (2016).
 }
 \usage{
-laplace.test(x, method = "transf", N = 10^5)
+laplace_test(x, method = "transf", N = 10^5)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -36,7 +36,7 @@ When \verb{"ratio"} option is chosen, a test based on the ratio of two estimator
   \item{data.name}{ a character string giving the name of the data set.  }
 }
 \references{
-Gonzalez-Estrada, E. and Villasenor, J.A. (2016). A ratio goodness-of-fit test for the Laplace distribution. (Submitted).
+Gonzalez-Estrada, E. and Villasenor, J.A. (2016). A ratio goodness-of-fit test for the Laplace distribution. \emph{Statistics and Probability Letters}, \bold{119}, 30-35. \url{https://doi.org/10.1016/j.spl.2016.07.003}
 }
 \author{
 Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor
@@ -45,11 +45,11 @@ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor
 \examples{
 # Example 1:  testing the Laplace distribution hypothesis using "transf" option
 x <- rnorm(50)   # simulating a random sample from a normal distribution
-laplace.test(x)    
+laplace_test(x)    
 
 # Example 2: testing the Laplace distribution hypothesis using "ratio" option
 x <- rt(60,4)    # simulating a random sample from Student's t distribution with 4 d.f.
-laplace.test(x, method = "ratio")
+laplace_test(x, method = "ratio")
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

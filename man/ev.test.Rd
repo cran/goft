@@ -1,5 +1,5 @@
-\name{ev.test}
-\alias{ev.test}
+\name{ev_test}
+\alias{ev_test}
 
 \title{
 Tests for the extreme value distributions
@@ -8,7 +8,7 @@ Tests for the extreme value distributions
 Correlation and ratio tests for Fisher-Tippet extreme value distributions.
 }
 \usage{
-ev.test(x, dist = "gumbel", method = "cor", N = 1000)
+ev_test(x, dist = "gumbel", method = "cor", N = 1000)
 }
 
 \arguments{
@@ -42,7 +42,7 @@ Elizabeth Gonzalez-Estrada, Jose A. Villasenor
 \examples{
 # Example 1:  testing the Gumbel distribution hypothesis using the correlation test
 x <- -log(rexp(20))   # simulating a data set from the standard Gumbel distribution
-ev.test(x)            
+ev_test(x)            
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

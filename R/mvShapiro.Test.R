@@ -1,7 +1,7 @@
 # A generalization of Shapiro-Wilk test for multivariate normality 
 # Villasenor-Alva and Gonzalez-Estrada (2009).
 
-mvShapiro.Test <- function(X){
+mvshapiro_test <- function(X){
 	dname <- deparse(substitute(X))
 	if (is.vector(X) == TRUE) X <- cbind(X)
 	stopifnot(is.matrix(X))

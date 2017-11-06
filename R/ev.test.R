@@ -2,7 +2,7 @@
 # Correlation and variance ratio tests for the extreme value distributions (Gumbel, Frechet and Weibull)
 # N is the number of Monte Carlo samples used to approximate critical values of the variance ratio test
 # -------------------------------------------------------------------------------------------------------
-ev.test <- function(x, dist = "gumbel", method = "cor", N = 1000){  
+ev_test <- function(x, dist = "gumbel", method = "cor", N = 1000){  
   DNAME <- deparse(substitute(x))
   if (!is.numeric(x)) stop(paste(DNAME, "must be a numeric vector"))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted")

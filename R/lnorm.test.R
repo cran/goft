@@ -1,6 +1,6 @@
 
 # Transformation test for the lognormal distribution
-lnorm.test <- function(x){
+lnorm_test <- function(x){
   DNAME <- deparse(substitute(x))
   if (!is.numeric(x) & length(x) <= 1) stop(paste(DNAME, "must be a numeric vector containing more than 1 observation"))
   x <- x[!is.na(x)]

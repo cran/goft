@@ -1,12 +1,12 @@
-\name{ig.test}
-\alias{ig.test}
+\name{ig_test}
+\alias{ig_test}
 \title{ Tests for the Inverse Gaussian distribution}
 \description{
 Tests of fit for  Inverse Gaussian distributions with unknown parameters (Villasenor and Gonzalez-Estrada, 2015).
 
 }
 \usage{
-ig.test(x, method = "transf")
+ig_test(x, method = "transf")
 }
 \arguments{
   \item{x}{ a numeric data vector containing a random sample of  positive real numbers. }
@@ -38,15 +38,15 @@ Ochoa, A. (2015). Pruebas para la distribucion Gaussiana inversa. Master's Thesi
 # option on the compressive strength variable of the strength data set.
 data("strength")
 y <- strength$cstrength        # compressive strength
-ig.test(y, method = "transf")
+ig_test(y, method = "transf")
 
 # Getting the p-value of the test based on a transformation to gamma variables
-ig.test(y)[[2]]$p.value 
+ig_test(y)[[2]]$p.value 
 
 # Example 2: testing the inverse Gaussian distribution hypothesis  using "ratio" 
 # option on a simulated data set.
 x <- rlnorm(500)    # simulating a random sample from the lognormal distribution
-ig.test(x, method = "ratio") 
+ig_test(x, method = "ratio") 
 
 }
 

@@ -1,5 +1,5 @@
 # Correlation test for univariate normality
-normal.test <- function(x, method = "cor"){  
+normal_test <- function(x, method = "cor"){  
   DNAME <- deparse(substitute(x))
   stopifnot(is.numeric(x))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted.")

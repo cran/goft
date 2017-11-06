@@ -1,6 +1,6 @@
 # MLE for the Inverse Gaussian distribution
 
-ig.fit <- function(x){
+ig_fit <- function(x){
   DNAME <- deparse(substitute(x))
   stopifnot(is.numeric(x))
   samplerange <- max(x) - min(x)

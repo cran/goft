@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------------
 # Tests for the Laplace or double exponential distribution
 
-laplace.test <- function(x, method = "transf", N = 10^5){
+laplace_test <- function(x, method = "transf", N = 10^5){
   dname <- deparse(substitute(x))  
   if (!is.numeric(x)) stop(paste(dname, "must be a numeric vector"))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted")

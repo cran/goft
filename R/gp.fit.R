@@ -1,6 +1,6 @@
 # Parameter estimators for the generalized Pareto distribution
 
-gp.fit <-  function(x, method){
+gp_fit <-  function(x, method){
   DNAME <- deparse(substitute(x))
   if (!is.numeric(x)) stop(paste(DNAME, "must be a numeric vector"))
   if (sum(is.na(x)) > 0) warning("NA values have been deleted")

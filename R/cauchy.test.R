@@ -1,7 +1,7 @@
 # ----------------------------------------------------------------------------------------
 # Test for Cauchy distributions
 
-cauchy.test <- function(x, N = 10^3){
+cauchy_test <- function(x, N = 10^3){
   DNAME <- deparse(substitute(x))
   if (!is.numeric(x)) stop(paste(DNAME, "must be a numeric vector"))
   
