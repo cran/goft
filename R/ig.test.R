@@ -11,7 +11,7 @@ ig_test <- function(x, method = "transf"){
   n <- length(x)   # adjusted sample size without NA values
   if (min(x) < 0) stop("The dataset contains negative observations. \nAll data must be non-negative real numbers.")
   if(any(c("ratio","transf") == method)== FALSE) stop("Invalid method. \nValid methods are 'transf'  and 'ratio'. ")  
-  alternative = paste(DNAME," does not follow an Inverse Gaussian distribution.")
+  
 
     
   if(method == "transf"){
@@ -31,7 +31,8 @@ ig_test <- function(x, method = "transf"){
       ad <- res$statistic
       p.value <- res$p.value
       results2 <- list(statistic =  ad, p.value = p.value, data.name = DNAME,
-                       method = "Test for Inverse Gaussian distributions using a transformation to gamma variables")
+                       method = "Test for Inverse Gaussian distributions using a transformation to gamma variables",
+                       alternative = paste(DNAME," does not follow an Inverse Gaussian distribution."))
       class(results2) = "htest"
       return(list(results1, results2))  
     }      
@@ -45,7 +46,9 @@ ig_test <- function(x, method = "transf"){
       t  <- sqrt(length(x) / (6 * m * v)) * (r - 1)       # test statistic (see Corollary 1 of Villasenor and Gonzalez-Estrada (2015))
       p.value <- 2 * pnorm(abs(t), lower.tail = FALSE)
       results <- list(statistic = c(T1 = t), p.value = p.value, 
-                      method = " Variance ratio test for Inverse Gaussian distributions", data.name = DNAME)
+                      method = " Variance ratio test for Inverse Gaussian distributions", data.name = DNAME,
+                      alternative = paste(DNAME," does not follow an Inverse Gaussian distribution.")
+                      )
       class(results) = "htest"
       return(results)
     }

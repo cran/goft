@@ -19,7 +19,7 @@ ev_test(x, dist = "gumbel", method = "cor", N = 1000)
 }
 
 \details{
-Option  \verb{"ratio"} performs a test based on the ratio of two estimators for the variance of the Gumbel (type I extreme value) distribution.
+Option  \verb{"ratio"} performs a test based on the ratio of two estimators for the variance of the Gumbel (type I extreme value) distribution (Gonzalez-Estrada and Villasenor, 2018).
 
 Option \verb{"cor"} performs a test based on the max-stability property of extreme value distributions (Gonzalez-Estrada and Villasenor, 2010). The sample size must lie between 20 and 250.
 }
@@ -31,7 +31,10 @@ Option \verb{"cor"} performs a test based on the max-stability property of extre
   \item{data.name}{ a character string giving the name of the data set.  }
 }
 \references{
+Gonzalez-Estrada, E. and Villasenor, J.A. (2018). An R package for testing goodness of fit: goft. \emph{Journal of Statistical Computation and Simulation}, \bold{88} 4, 726-751. \url{https://doi.org/10.1080/00949655.2017.1404604}
+
  Gonzalez-Estrada, E. and Villasenor-Alva, J.A. (2010). A Goodness-of-Fit Test for Location-Scale Max-Stable Distributions. \emph{Communications in Statistics: Simulation and Computation}, \bold{39} 3, 557-562. 
+ \url{https://doi.org/10.1080/03610910903528293}
  
 }
 \author{

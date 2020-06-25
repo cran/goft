@@ -22,7 +22,7 @@ exp_test(x, method = "transf", N = 10^3)
 }
 \details{
 Option \verb{"transf"} performs a test based on a transformation to approximately uniformly distributed  variables.
-If the sample size is larger than 200, the asymptotic null distribution of the test statistic is used to approximate the p-value; otherwise, it is approximated by Monte Carlo simulation.
+If the sample size is larger than 200, the asymptotic null distribution of the test statistic is used to approximate the p-value; otherwise, it is approximated by Monte Carlo simulation (Villasenor and Gonzalez-Estrada, 2020).
 
 Option \verb{"ratio"} performs Cox and Oakes (1984) test.
 }
@@ -36,7 +36,10 @@ A list with class \code{"htest"} containing the following components.
 }
 
 \references{
-Cox, D.R., Oakes, D., 1984. Analysis of Survival Data. Chapman and Hall/CRC.
+
+Villasenor, J.A. and Gonzalez-Estrada, E. 2020. On testing exponentiality based on a new estimator for the scale parameter. \emph{Brazilian Journal of Probability and Statistics} (accepted for publication).
+
+Cox, D.R., Oakes, D. 1984. Analysis of Survival Data. Chapman and Hall/CRC.
 }
 \author{
 Elizabeth Gonzalez-Estrada, Jose A. Villasenor

@@ -17,7 +17,7 @@ Ozone levels in parts per million (ppm) registered in the southwest  of Mexico C
 }
 
 \source{
-Atmospheric Monitoring Office of Mexico City. \url{http://www.aire.df.gob.mx/default.php?opc='aqBjnmU='}
+Atmospheric Monitoring Office of Mexico City.
 }
 \examples{
 data(o3)

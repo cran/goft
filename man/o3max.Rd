@@ -16,7 +16,7 @@ Maximum ozone concentrations (in ppm) per month registered in the southwest  of 
   }
 }
 \source{
-Atmospheric Monitoring Office of Mexico City.  \url{http://www.aire.df.gob.mx/default.php?opc='aqBjnmU='}
+Atmospheric Monitoring Office of Mexico City. 
 }
 
 \examples{

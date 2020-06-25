@@ -2,13 +2,13 @@
 \alias{cauchy_test}
 
 \title{
-Test for the Cauchy distribution
+Tests for the Cauchy distribution
 }
 \description{
-A test based on the ratio of two estimators for the scale parameter of the Cauchy distribution.
+Two tests for the Cauchy distribution hypothesis.
 }
 \usage{
-cauchy_test(x, N = 10^3)
+cauchy_test(x, N = 10^3, method = "transf")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -16,13 +16,16 @@ cauchy_test(x, N = 10^3)
 a numeric data vector containing a random sample of real numbers.
 }
   \item{N}{
-number of Monte Carlo samples used to approximate the p-value of the test. Default is N = 10^3.
+number of Monte Carlo samples used to approximate the p-value of the tests. Default is N = 10^3.
+}
+\item{method}{ character string giving the name of the method to be used for testing the Cauchy distribution hypothesis. Two available options are \verb{"transf"} and \verb{"ratio"}.
 }
 }
 \details{
-
-The test statistic is the ratio of the maximum likelihood estimator of the scale parameter and the mean absolute deviation. 
-
+Option  \verb{"ratio"} performs a test for the Cauchy distribution based on the ratio of the maximum likelihood estimator for the scale parameter  and the mean absolute deviation (Gonzalez-Estrada and Villasenor, 2018). 
+ 
+  Option \verb{"transf"} performs a test based on a data transformation to    approximately exponentially distributed data  (Villasenor and Gonzalez-Estrada, 2020).
+ 
 }
 \value{
   A list with class \code{"htest"} containing the following components.
@@ -32,9 +35,12 @@ The test statistic is the ratio of the maximum likelihood estimator of the scale
   \item{data.name}{ a character string giving the name of the data set.  }
 }
 
-\author{
-Elizabeth Gonzalez-Estrada and Jose A. Villasenor
+\references{ Gonzalez-Estrada, E. and Villasenor, J.A. (2018). An R package for testing goodness of fit: goft. \emph{Journal of Statistical Computation and Simulation}, \bold{88} 4, 726-751. \url{https://doi.org/10.1080/00949655.2017.1404604}
+
+Villasenor, J.A. and Gonzalez-Estrada, E.  (2020). Goodness of fit tests for Cauchy distributions using data transformations. In I. Ghosh, N. Balakrishnan and H.K.T. Ng. \emph{Contributions of Barry C. Arnold to Statistical Science - Theory and Applications}. Springer. 
+
 }
+\author{ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}}
 
 \examples{
 x <- rnorm(20)    # simulating a data set from a normal distribution

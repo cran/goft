@@ -4,6 +4,7 @@ exportPattern(".")
 # Import all packages listed as Imports or Depends
  importFrom("stats", "cor", "cov", "ecdf", "pexp", "pgamma", "pnorm",
              "qnorm", "qweibull", "rbinom", "rcauchy", "rexp", "runif",
-             "shapiro.test", "var")
+             "shapiro.test", "var", "rnorm", "pcauchy")
   importFrom("utils", "combn")
   importFrom("fitdistrplus", "mledist")
+  importFrom("sn", "sn.mple", "cp2dp")

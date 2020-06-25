@@ -2,7 +2,7 @@
 \alias{ig_test}
 \title{ Tests for the Inverse Gaussian distribution}
 \description{
-Tests of fit for  Inverse Gaussian distributions with unknown parameters (Villasenor and Gonzalez-Estrada, 2015).
+Implementation of three tests of fit for  Inverse Gaussian distributions with unknown parameters (see Details section).
 
 }
 \usage{
@@ -14,7 +14,7 @@ ig_test(x, method = "transf")
 }
 \details{
 Option \verb{"transf"} performs two tests based on data transformations. One test 
-transforms the observations to approximately normally distributed observations and then uses Shapiro-Wilk test for asssessing univariate normality  (Ochoa, 2015). 
+transforms the observations to approximately normally distributed observations and then uses Shapiro-Wilk test for asssessing univariate normality  (Villasenor et al., 2019). 
 The other test is based on a transformation of data to gamma variables with shape parameter equal to 1/2 and uses Anderson-Darling test for testing the gamma distribution (Villasenor and Gonzalez-Estrada, 2015).
 The right-hand side tail of the null distribution for Anderson-Darling test statistic is approximated by an inverse Gaussian distribution in order to get approximated p-values. 
 
@@ -29,9 +29,9 @@ Option \verb{"ratio"} performs a test based on the ratio of two variance estimat
 }
 \references{ Villasenor, J.A. and Gonzalez-Estrada, E. (2015). Tests of fit for Inverse Gaussian distributions. \emph{Statistics and Probability Letters}, \bold{105}, 189-194. \url{http://dx.doi.org/10.1016/j.spl.2015.06.017}
 
-Ochoa, A. (2015). Pruebas para la distribucion Gaussiana inversa. Master's Thesis. Colegio de Postgraduados, Mexico.
-
+ Villasenor, J.A. Gonzalez-Estrada, E. and  Ochoa, A. (2019). On Testing the Inverse Gaussian Distribution Hypothesis. \emph{ Sankhya B:  The Indian Journal of Statistics}. \bold{81}, 60-74. \url{https://doi.org/10.1007/s13571-017-0148-8}
 }
+
 \author{ Elizabeth Gonzalez-Estrada \email{egonzalez@colpos.mx}, Jose A. Villasenor-Alva}
 \examples{
 # Example 1: testing the inverse Gaussian distribution hypothesis  using "transf" 
